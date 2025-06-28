@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <div>
+        <div class="registration">
             <h1>Регистрация</h1>
             <p><span>Уже есть аккаунт?</span> <a href="#">Войти</a></p>
         </div>
@@ -19,7 +23,7 @@
                 <input type="text" name="username" id="username" placeholder="Имя пользователя" value="Мой компания"
                     required>
             </div>
-            <div>
+            <div class="name">
                 <input type="text" name="name" id="name" placeholder="Имя" required>
                 <input type="text" name="surname" id="surname" placeholder="Фамилия" required>
             </div>
@@ -35,9 +39,9 @@
                     </svg></button>
             </div>
         </form>
-        <div>
+        <div class="agreement">
             <input type="checkbox" name="agree" id="agree" value="Я прочитал и принимаю" />
-            <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+            <label for="agree">Я прочитал и принимаю</label><a href="#">Условия использования</a>
         </div>
     </main>
 </body>
