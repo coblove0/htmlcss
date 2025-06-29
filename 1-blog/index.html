@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
@@ -17,16 +18,20 @@
                 <li><a href="">Backend</a></li>
             </ul>
         </nav>
-        <search><input type="button" value="Поиск" /></search>
+        <search>
+            <form action="#" method="get">
+                <img src="./img/search.svg" alt="Иконка лупы"><input type="text" placeholder="Поиск" id="search"/>
+            </form>
+        </search>
     </header>
     <main>
-        <p>
-            FRONTEND . 12 мая 2024
+        <p class="tagDate">
+            FRONTEND <img src="./img/Rectangle 5.svg" alt="круглешок"> 12 мая 2024
         </p>
         <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
         <figure>
-            <img src="./img/avatar.png" alt="avatar"> Наталья Васильева <br />
-            Разработчик
+            <img src="./img/Ellipse 1.svg" alt="avatar"> <span class="name">Наталья Васильева</span><br />
+            <span class="jobTitle">Разработчик</span>
         </figure>
         <div>
             <img src="./img/pc.png" alt="image of imac">
@@ -41,14 +46,14 @@
             положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить
             конверсию.
         </p>
-        <p>
+        <p class="secondaryText">
             Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет. Эмоциональная и
             поведенческая
             реакция каждого человека зависит от личного опыта. Вместе с тем можно выделить определенные закономерности
             влияния
             цветов на поведение пользователей.
 
-            В исследовании «Влияние цвета на маркетинг» (Impact of color on marketing) говорится, что использование
+            В исследовании «Влияние цвета на маркетинг» <a href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">(Impact of color on marketing)</a> говорится, что использование
             разных цветов
             может существенно влиять на настроение и поведение потребителей. Утверждается, что от 60 до 90% покупателей
             (в

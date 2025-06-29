@@ -1,0 +1,132 @@
+* {
+    color: #FFFFFF;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+header a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+header {
+    padding: 80px 0px;
+}
+
+input {
+    background: #1F293799;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+h1 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 158.333% */
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+figure {
+    margin: 0px 0px 28px 0px;
+}
+
+figure > img {
+    border-radius: 50px;
+}
+
+footer {
+    opacity: 0.6;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.tagDate {
+    opacity: 0.6;
+    margin-bottom: 14px;
+}
+
+.name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.jobTitle {
+    opacity: 0.6;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+}
+
+.tagDate > img {
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+.mainText {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.secondaryText {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin-bottom: 103px;
+}
+
+.secondaryText a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+main > div {
+    margin-bottom: 69px;
+}
+
+#search {
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 10px;
+}
