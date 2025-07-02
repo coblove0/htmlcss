@@ -4,12 +4,12 @@
 
 body {
     box-sizing: border-box;
+    font-family: Roboto;
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
 }
 
-header a {
+div > a, li > a {
     text-decoration: none;
-    font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -17,16 +17,43 @@ header a {
 }
 
 header {
+    display: flex;
+    margin: 0 auto;
     padding: 80px 0px;
+    align-items: center;
+    max-width: 1440px;
+    justify-items: flex-start;
+}
+
+header > div {
+    display: flex;
+    margin: 0 auto;
+    gap: 77px;
+    align-items: center;
+    justify-items: flex-start;
+    padding-right: 346px;
+}
+
+ul {
+    display: flex;
+    gap: 52px;
+    list-style-type: none;
 }
 
 input {
     background: #1F293799;
+    width: 224px;
+    height: 40px;
 }
 
 input::placeholder {
     color: #FFFFFF;
     opacity: 0.6;
+    padding-left: 49px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h1 {
@@ -36,8 +63,8 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 38px; /* 158.333% */
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 img {
@@ -45,8 +72,16 @@ img {
     max-height: 80vh;
 }
 
+.heroImg {
+    margin: 0 auto;
+    padding-bottom: 69px;
+}
+
 figure {
-    margin: 0px 0px 28px 0px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 30px;
 }
 
 figure > img {
@@ -61,14 +96,22 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 175% */
+    padding-bottom: 77px;
 }
 
 .tagDate {
     opacity: 0.6;
-    margin-bottom: 14px;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
-.name {
+input#search {
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.firstName {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -104,7 +147,6 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 187.5% */
-    margin-bottom: 103px;
 }
 
 .secondaryText a {
@@ -121,12 +163,35 @@ footer {
     text-underline-position: from-font;
 }
 
+.lastText {
+    padding-bottom: 103px;
+}
+
 main > div {
     margin-bottom: 69px;
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 #search {
     height: 40px;
     border-radius: 100px;
     padding: 0 10px;
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 30px;
 }
