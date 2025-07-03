@@ -97,10 +97,18 @@ button {
     width: 394px;
     justify-content: center;
     align-items: center;
+    gap: 0;
+    padding: 0 24px;
+}
+
+button span {
+    flex: 1 1 auto;
+    text-align: center;
 }
 
 button > svg {
-    align-items: end;
+    flex: 0 0 auto;
+    margin-left: 16px;
 }
 
 label {
