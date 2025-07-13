@@ -1,0 +1,15 @@
+* {
+  --primary-text-size: 17px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+div,
+h2,
+h3,
+p {
+  margin: 0;
+}
