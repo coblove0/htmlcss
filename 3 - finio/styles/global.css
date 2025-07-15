@@ -1,5 +1,10 @@
 * {
+  --header-desktop-size: 48px;
+  --header-mobile-size: 36px;
   --primary-text-size: 17px;
+  --secondary-text-color: rgba(78, 93, 124, 0.5);
+  --active-color: #357efe;
+  --default-color: #fff;
 }
 
 body {

@@ -6,7 +6,7 @@
 }
 
 .page__article-header {
-  font-size: 48px;
+  font-size: var(--header-desktop-size);
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  color: rgba(78, 93, 124, 0.5);
+  color: var(--secondary-text-color);
   justify-self: center;
 }
 
@@ -34,15 +34,15 @@
   max-width: 369px;
   border-radius: 8px;
   filter: drop-shadow(0px 0px 32px rgba(78, 93, 124, 0.16));
-  background: #fff;
+  background: var(--default-color);
   padding: 48px 40px;
   min-width: 307px;
   min-height: 435px;
 }
 
 .card_active {
-  background: #357efe;
-  color: #fff;
+  background: var(--active-color);
+  color: var(--default-color);
 }
 
 .card__discount {
@@ -73,7 +73,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  color: rgba(78, 93, 124, 0.5);
+  color: var(--secondary-text-color);
   grid-row: 3;
 }
 
@@ -105,7 +105,7 @@
   font-size: var(--primary-text-size);
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 20.4px */
+  line-height: 120%;
 }
 
 .price-name {
@@ -132,16 +132,16 @@
   font-style: normal;
   font-weight: 800;
   line-height: 140%;
-  color: #fff;
+  color: var(--default-color);
 }
 
 .button_ghost {
-  background: #357efe;
+  background: var(--active-color);
 }
 
 .button_active {
-  color: #357efe;
-  background: #fff;
+  color: var(--active-color);
+  background: var(--default-color);
 }
 
 @media (max-width: 1256px) {
@@ -154,7 +154,7 @@
   }
 
   .page__article-header {
-    font-size: 36px;
+    font-size: var(--header-mobile-size);
   }
 
   .page__undertext {
