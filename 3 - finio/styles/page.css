@@ -1,3 +1,3 @@
-.page {
-  display: grid;
+.headling {
+  background: var(--active-color);
 }

@@ -1,18 +1,20 @@
-.page__header {
+/* Тарифы */
+
+.tariff__header {
   display: grid;
   gap: 24px;
   justify-items: center;
   margin-bottom: 40px;
 }
 
-.page__article-header {
+.tariff__article-header {
   font-size: var(--header-desktop-size);
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
 }
 
-.page__undertext {
+.tariff__undertext {
   font-size: var(--primary-text-size);
   font-style: normal;
   font-weight: 500;
@@ -123,6 +125,73 @@
   background: #ffc736;
 }
 
+/* Первая страница */
+
+.headling__wrapper {
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 264px;
+}
+
+.header__logo {
+  color: var(--default-color);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 140%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: none;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation__item a:hover {
+  color: var(--default-color);
+}
+
+.header__menu {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 161px 33px 264px;
+}
+
+.content__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__header {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  color: var(--default-color);
+  margin-bottom: 40px;
+}
+
+.content__social-media {
+  margin: 80px 122px 0 0;
+}
+
+/* Кнопки */
+
 .button {
   border: none;
   border-radius: 47px;
@@ -133,6 +202,7 @@
   font-weight: 800;
   line-height: 140%;
   color: var(--default-color);
+  cursor: pointer;
 }
 
 .button_ghost {
@@ -144,6 +214,33 @@
   background: var(--default-color);
 }
 
+.button_content {
+  margin-right: 112px;
+  padding: 12px 32px;
+}
+
+/* Медиа выражения */
+
+@media (max-width: 1750px) {
+  .content__right {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  .navigation {
+    display: none;
+  }
+
+  .button_header {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+}
+
 @media (max-width: 1256px) {
   .options {
     grid-template-columns: 1fr;
@@ -153,11 +250,11 @@
     padding: 48px 24px;
   }
 
-  .page__article-header {
+  .tariff__article-header {
     font-size: var(--header-mobile-size);
   }
 
-  .page__undertext {
+  .tariff__undertext {
     max-width: calc(369px + 24px * 2);
     min-width: 307px;
   }
