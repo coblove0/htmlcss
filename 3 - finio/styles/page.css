@@ -1,3 +1,7 @@
-.headling {
-  background: var(--active-color);
+.section {
+  background: var(--default-color);
+}
+
+.section_active {
+  background-color: var(--active-color);
 }

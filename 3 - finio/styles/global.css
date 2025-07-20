@@ -1,11 +1,13 @@
 * {
   --header-desktop-size: 48px;
   --content-desktop-header: 40px;
+  --secondary-header-size: 24px;
   --content-mobile-header: 32px;
   --content-undertext: 18px;
   --header-mobile-size: 36px;
   --primary-text-size: 17px;
   --secondary-text-color: rgba(78, 93, 124, 0.5);
+  --undertext-text-color: rgba(255, 255, 255, 0.8);
   --common-text-size: 24px;
   --common-secondary-text-size: 18px;
   --active-color: #357efe;
