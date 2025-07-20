@@ -1,5 +1,8 @@
 * {
   --header-desktop-size: 48px;
+  --content-desktop-header: 40px;
+  --content-mobile-header: 32px;
+  --content-undertext: 18px;
   --header-mobile-size: 36px;
   --primary-text-size: 17px;
   --secondary-text-color: rgba(78, 93, 124, 0.5);

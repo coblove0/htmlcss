@@ -178,7 +178,7 @@
 }
 
 .content__header {
-  font-size: 40px;
+  font-size: var(--content-desktop-header);
   font-style: normal;
   font-weight: 800;
   line-height: 120%;
@@ -236,6 +236,59 @@
 .button_content {
   margin-right: 112px;
   padding: 12px 32px;
+}
+
+/* Основная часть страницы */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 144px;
+}
+
+.main__card {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  max-width: calc(510px + 35px + 729px);
+  min-width: 328px;
+}
+
+.main__card_reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 510px;
+}
+
+.main__card .text {
+  padding-left: 46px;
+}
+
+.main__card_reverse .text {
+  padding-right: 103px;
+  padding-left: 0;
+}
+
+.text_header {
+  font-size: var(--content-desktop-header);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 48px */
+}
+
+.text_undertext {
+  color: var(--secondary-text-color);
+  font-size: var(--content-undertext);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
 }
 
 /* Медиа выражения */
@@ -305,11 +358,33 @@
   .pro {
     font-size: var(--common-secondary-text-size);
   }
+
+  .main__card {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 @media (max-width: 975px) {
   .headling__pros {
     flex-direction: column;
     gap: 32px;
+  }
+
+  .main {
+    margin-top: 48px;
+  }
+  .main__picture {
+    width: 357px;
+  }
+
+  .text {
+    padding: 0;
+    gap: 24px;
+    margin: 0 24px;
+  }
+
+  .text_header {
+    font-size: var(--content-mobile-header);
   }
 }
