@@ -190,6 +190,25 @@
   margin: 80px 122px 0 0;
 }
 
+.headling__footer {
+  background: var(--default-color);
+  justify-items: center;
+}
+
+.headling__pros {
+  display: flex;
+  gap: 64px;
+}
+
+.pro {
+  display: flex;
+  gap: 16px;
+  font-size: var(--common-text-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
 /* Кнопки */
 
 .button {
@@ -279,5 +298,18 @@
 
   .content__header {
     margin: 0 24px 0 24px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .pro {
+    font-size: var(--common-secondary-text-size);
+  }
+}
+
+@media (max-width: 975px) {
+  .headling__pros {
+    flex-direction: column;
+    gap: 32px;
   }
 }

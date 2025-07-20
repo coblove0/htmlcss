@@ -3,6 +3,8 @@
   --header-mobile-size: 36px;
   --primary-text-size: 17px;
   --secondary-text-color: rgba(78, 93, 124, 0.5);
+  --common-text-size: 24px;
+  --common-secondary-text-size: 18px;
   --active-color: #357efe;
   --default-color: #fff;
 }
