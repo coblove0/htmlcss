@@ -1,5 +1,9 @@
 /* Тарифы */
 
+.tariff {
+  margin-top: 80px;
+}
+
 .tariff__header {
   display: grid;
   gap: 24px;
@@ -499,6 +503,90 @@
   align-items: center;
 }
 
+/* Страница с отзывами */
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.feedback__header {
+  font-size: var(--header-desktop-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 57.6px */
+}
+
+.feedback__card {
+  display: flex;
+  background-color: var(--active-color);
+  border-radius: 8px;
+}
+
+.feedback__text {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.feedback__header_card {
+  color: var(--default-color);
+  font-size: var(--content-mobile-header);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 38.4px */
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.feedback__name {
+  color: var(--default-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+}
+
+.feedback__jobtitle {
+  color: var(--undertext-text-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+}
+
+.feedback_photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../images/feedback.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 578px;
+  height: 438px;
+}
+
+.feedback__button {
+  border: none;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.feedback__button img {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback__dots {
+  display: none;
+}
+
 /* Медиа выражения */
 
 @media (max-width: 1750px) {
@@ -591,6 +679,45 @@
   .main__card {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .tariff {
+    margin-top: 48px;
+  }
+
+  .feedback__card {
+    flex-direction: column-reverse;
+    max-width: 417px;
+  }
+
+  .feedback__button {
+    display: none;
+  }
+
+  .feedback__header_card {
+    margin: 0 24px 40px 24px;
+    font-size: var(--content-mobile-header);
+  }
+
+  .feedback__author {
+    margin: 40px 24px;
+  }
+
+  .feedback__text {
+    margin-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .feedback_photo {
+    width: 100%;
+  }
+
+  .feedback__jobtitle {
+    margin-bottom: 48px;
+  }
+  .feedback__dots {
+    display: block;
+    justify-self: center;
   }
 }
 
