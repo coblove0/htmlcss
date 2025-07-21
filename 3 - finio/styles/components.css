@@ -447,6 +447,58 @@
   display: none;
 }
 
+/* Страница поддержки */
+
+.support {
+  display: flex;
+  justify-content: center;
+}
+
+.support__wrapper {
+  display: flex;
+  padding: 0 156px 0 95px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.support__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.support__header {
+  color: var(--default-color);
+  font-size: var(--content-desktop-header);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 48px */
+  margin-bottom: 24px;
+}
+
+.support__subtext {
+  color: var(--undertext-text-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+  margin-bottom: 40px;
+  max-width: 419px;
+}
+
+.support__sm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.support__contact {
+  color: var(--default-color);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
 /* Медиа выражения */
 
 @media (max-width: 1750px) {
@@ -524,6 +576,10 @@
   .security__header {
     font-size: var(--secondary-header-size);
     margin-bottom: 24px;
+  }
+
+  .support__wrapper {
+    padding: 0;
   }
 }
 
@@ -605,5 +661,19 @@
   .mobile__img_m {
     display: block;
     align-self: flex-end;
+  }
+
+  .support {
+    background: var(--active-color);
+  }
+
+  .support__wrapper {
+    margin-top: 64px;
+    flex-direction: column-reverse;
+  }
+
+  .support__img {
+    max-width: calc(100% - 24px * 2);
+    padding: 0 24px;
   }
 }
