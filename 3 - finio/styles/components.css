@@ -511,6 +511,7 @@
   align-items: center;
   gap: 40px;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .feedback__header {
@@ -587,6 +588,74 @@
   display: none;
 }
 
+/* Футер */
+
+.footer {
+  background: #1a1d25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__main {
+  display: flex;
+  gap: 124px;
+  margin-top: 80px;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-bottom: rgba(255, 255, 255, 0.08) solid;
+}
+
+.footer__undertext {
+  color: var(--undertext-text-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  color: var(--undertext-secondary-text-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info__text {
+  color: var(--undertext-text-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 23.8px */
+}
+
+.info__text a {
+  color: var(--undertext-secondary-text-color);
+  font-size: var(--primary-text-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+  align-items: center;
+}
+
 /* Медиа выражения */
 
 @media (max-width: 1750px) {
@@ -606,6 +675,10 @@
 
   .header__menu {
     display: block;
+  }
+
+  .footer__main {
+    gap: 64px;
   }
 }
 
@@ -669,6 +742,17 @@
   .support__wrapper {
     padding: 0;
   }
+
+  .footer__main {
+    gap: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .footer__copyright {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -683,6 +767,11 @@
 
   .tariff {
     margin-top: 48px;
+  }
+
+  .feedback {
+    margin-bottom: 64px;
+    margin-top: 64px;
   }
 
   .feedback__card {
@@ -802,5 +891,23 @@
   .support__img {
     max-width: calc(100% - 24px * 2);
     padding: 0 24px;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    gap: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .footer__copyright {
+    flex-direction: column-reverse;
+    gap: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .footer__list {
+    padding-left: 0;
   }
 }

@@ -8,6 +8,7 @@
   --primary-text-size: 17px;
   --secondary-text-color: rgba(78, 93, 124, 0.5);
   --undertext-text-color: rgba(255, 255, 255, 0.8);
+  --undertext-secondary-text-color: rgba(255, 255, 255, 0.5);
   --common-text-size: 24px;
   --common-secondary-text-size: 18px;
   --active-color: #357efe;
@@ -24,6 +25,7 @@ body {
 div,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
