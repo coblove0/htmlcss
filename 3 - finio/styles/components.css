@@ -131,9 +131,6 @@
 
 /* Первая страница */
 
-.headling__wrapper {
-}
-
 .header {
   display: flex;
   flex-direction: row;
