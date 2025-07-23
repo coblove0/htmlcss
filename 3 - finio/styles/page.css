@@ -1,3 +1,35 @@
-.page {
-  display: grid;
+.section {
+  background: var(--default-color);
+}
+
+.section_active {
+  background-color: var(--active-color);
+}
+
+.section_active:has(.headling__wrapper) {
+  background: linear-gradient(
+    175deg,
+    var(--active-color) 0%,
+    var(--active-color) 70%,
+    transparent 70%,
+    transparent 100%
+  );
+}
+
+@media (max-width: 1750px) {
+  .section_active:has(.headling__wrapper) {
+    background-color: var(--active-color);
+  }
+}
+
+@media (max-width: 975px) {
+  .section_active:has(.headling__wrapper) {
+    background: linear-gradient(
+      175deg,
+      var(--active-color) 0%,
+      var(--active-color) 70%,
+      transparent 70%,
+      transparent 100%
+    );
+  }
 }
