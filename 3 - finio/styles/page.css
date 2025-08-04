@@ -1,3 +1,14 @@
-.page {
-  display: grid;
+.section {
+  background: var(--default-color);
+  margin: 80px 0;
+}
+
+.section_active {
+  background-color: var(--active-color);
+}
+
+@media (max-width: 975px) {
+  .section {
+    margin: 48px 0;
+  }
 }
